@@ -2,10 +2,19 @@
 body {
     background: white; 
     color: #323232;
+    background-image: url("https://images.ctfassets.net/cnu0m8re1exe/4tflobsiQoaB0eBIZr4T7Z/8400a2fa8d6c7db34fcfd7375458a35e/shutterstock_112763713.jpg?w=650&h=433&fit=fill");
+    /* background-repeat: no-repeat; */
   }
   .jumbotron {
       text-align: center !important;
+      color: rgb(111, 65, 236);
+      
   }
+
+.lead, .display-3 {
+    font-weight: bolder;
+}
+
 
 /* TIMEBLOCKS SECTION */
   ul{
