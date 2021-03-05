@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css" />
-
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
 </head>
 
@@ -19,173 +17,58 @@
     <header class="jumbotron">
         <h1 class="display-3">Work Day Scheduler</h1>
         <p class="lead">A simple calendar app for scheduling your work day</p>
-        <!-- Create a display to show current day and time -->
         <p id="currentDay" class="lead"></p>
     </header>
-
-    <section class="container">
-        <div class="hourRows">
-            <div class="row timeBox" style="height: 150px">
-                <div class="col-md-2">
-                    <h3 id="9amTime" class="timeOfDay">9:00 am</h3>
-                </div>
-
-                <div class="col-md-9" id="textbox-9">
-                    <Textarea style="height: 100%; width: 100%" class="text-box" id="box9">
-                </Textarea>
-                </div>
-
-                <div class="col-md-1">
-                    <button class="save-box" id="save9am">
-                        <img src="./Assets/Images/Floppy.save.jpg" height="35px">
-                    </button>
-                </div>
-            </div>
-
-            <div class="row timeBox" style="height: 150px">
-                <div class="col-md-2">
-                    <h3 id="10amTime" class="timeOfDay">10:00 am</h3>
-                </div>
-
-                <div class="col-md-9" id="textbox-10">
-                    <Textarea style="height: 100%; width: 100%" class="text-box" id="box10">
-                </Textarea>
-                </div>
-
-                <div class="col-md-1">
-                    <button class="save-box" id="save10am">
-                        <img src="./Assets/Images/Floppy.save.jpg" height="35px">
-                    </button>
-                </div>
-            </div>
-
-            <div class="row timeBox" style="height: 150px">
-                <div class="col-md-2">
-                    <h3 id="11amTime" class="timeOfDay">11:00 am</h3>
-                </div>
-
-                <div class="col-md-9" id="textbox-11">
-                    <Textarea style="height: 100%; width: 100%" class="text-box" id="box11">
-                </Textarea>
-                </div>
-
-                <div class="col-md-1">
-                    <button class="save-box" id="save11am">
-                        <img src="./Assets/Images/Floppy.save.jpg" height="35px">
-                    </button>
-                </div>
-            </div>
-
-            <div class="row timeBox" style="height: 150px">
-                <div class="col-md-2">
-                    <h3 id="12pmTime" class="timeOfDay">12:00 pm</h3>
-                </div>
-
-                <div class="col-md-9" id="textbox-12">
-                    <Textarea style="height: 100%; width: 100%" class="text-box" id="box12">
-                </Textarea>
-                </div>
-
-                <div class="col-md-1">
-                    <button class="save-box" id="save12pm">
-                        <img src="./Assets/Images/Floppy.save.jpg" height="35px">
-                    </button>
-                </div>
-            </div>
-
-            <div class="row timeBox" style="height: 150px">
-                <div class="col-md-2">
-                    <h3 id="1pmTime" class="timeOfDay">1:00 pm</h3>
-                </div>
-
-                <div class="col-md-9" id="textbox-13">
-                    <Textarea style="height: 100%; width: 100%" class="text-box" id="box13">
-                </Textarea>
-                </div>
-
-                <div class="col-md-1">
-                    <button class="save-box" id="save1pm">
-                        <img src="./Assets/Images/Floppy.save.jpg" height="35px">
-                    </button>
-                </div>
-            </div>
-
-            <div class="row timeBox" style="height: 150px">
-                <div class="col-md-2">
-                    <h3 id="2pmTime" class="timeOfDay">2:00 pm</h3>
-                </div>
-
-                <div class="col-md-9" id="textbox-14">
-                    <Textarea style="height: 100%; width: 100%" class="text-box" id="box14">
-                </Textarea>
-                </div>
-
-                <div class="col-md-1">
-                    <button class="save-box" id="save2pm">
-                        <img src="./Assets/Images/Floppy.save.jpg" height="35px">
-                    </button>
-                </div>
-            </div>
-
-            <div class="row timeBox" style="height: 150px">
-                <div class="col-md-2">
-                    <h3 id="3pmTime" class="timeOfDay">3:00 pm</h3>
-                </div>
-
-                <div class="col-md-9" id="textbox-15">
-                    <Textarea style="height: 100%; width: 100%" class="text-box" id="box15">
-                </Textarea>
-                </div>
-
-                <div class="col-md-1">
-                    <button class="save-box" id="save3pm">
-                        <img src="./Assets/Images/Floppy.save.jpg" height="35px">
-                    </button>
-                </div>
-            </div>
-
-            <div class="row timeBox" style="height: 150px">
-                <div class="col-md-2">
-                    <h3 id="4pmTime" class="timeOfDay">4:00 pm</h3>
-                </div>
-
-                <div class="col-md-9" id="textbox-16">
-                    <Textarea style="height: 100%; width: 100%" class="text-box" id="box16">
-                </Textarea>
-                </div>
-
-                <div class="col-md-1">
-                    <button class="save-box" id="save4pm">
-                        <img src="./Assets/Images/Floppy.save.jpg" height="35px">
-                    </button>
-                </div>
-            </div>
-
-            <div class="row timeBox" style="height: 150px">
-                <div class="col-md-2">
-                    <h3 id="5pmTime" class="timeOfDay">5:00 pm</h3>
-                </div>
-
-                <div class="col-md-9" id="textbox-17">
-                    <Textarea style="height: 100%; width: 100%" class="text-box" id="box17">
-                </Textarea>
-                </div>
-
-                <div class="col-md-1">
-                    <button class="save-box" id="save5pm">
-                        <img src="./Assets/Images/Floppy.save.jpg" height="35px">
-                    </button>
+    <section class="timeBlocks">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="blocks">
+                        <li value="9"><span class="timeArea">9AM</span>
+                            <textarea class="inputArea 9"></textarea>
+                            <span class="saveBtn"><img src = "./assets/img/Floppy.save.jpg" class = "imgBtn"></i></span>
+                        </li>
+                        <li value="10"><span class="timeArea">10AM</span>
+                            <textarea class="inputArea 10"></textarea>
+                            <span class="saveBtn"><img src = "./assets/img/Floppy.save.jpg" class = "imgBtn"></i></span>
+                        </li>
+                        <li value="11"><span class="timeArea">11AM</span>
+                            <textarea class="inputArea 11"></textarea>
+                            <span class="saveBtn"><img src = "./assets/img/Floppy.save.jpg" class = "imgBtn"></i></span>
+                        </li>
+                        <li value="12"><span class="timeArea">12PM</span>
+                            <textarea class="inputArea 12"></textarea>
+                            <span class="saveBtn"><img src = "./assets/img/Floppy.save.jpg" class = "imgBtn"></i></span>
+                        </li>
+                        <li value="13"><span class="timeArea">1PM</span>
+                            <textarea class="inputArea 13"></textarea>
+                            <span class="saveBtn"><img src = "./assets/img/Floppy.save.jpg" class = "imgBtn"></i></span>
+                        </li>
+                        <li value="14"><span class="timeArea">2PM</span>
+                            <textarea class="inputArea 14"></textarea>
+                            <span class="saveBtn"><img src = "./assets/img/Floppy.save.jpg" class = "imgBtn"></i></span>
+                        </li>
+                        <li value="15"><span class="timeArea">3PM</span>
+                            <textarea class="inputArea 15"></textarea>
+                            <span class="saveBtn"><img src = "./assets/img/Floppy.save.jpg" class = "imgBtn"></i></span>
+                        </li>
+                        <li value="16"><span class="timeArea">4PM</span>
+                            <textarea class="inputArea 16"></textarea>
+                            <span class="saveBtn"><img src = "./assets/img/Floppy.save.jpg" class = "imgBtn"></i></span>
+                        </li>
+                        <li value="17"><span class="timeArea">5PM</span>
+                            <textarea class="inputArea 17"></textarea>
+                            <span class="saveBtn"><img src = "./assets/img/Floppy.save.jpg" class = "imgBtn"></i></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-
-    <script src="./script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://kit.fontawesome.com/9eb39d4800.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8a95b1eafc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
